@@ -84,6 +84,7 @@ namespace Completed
         {
             int randomIndex = Random.Range(0, gridPositions.Count);
             Vector3 randomPosition = gridPositions[randomIndex];
+            
             //remove the entry at randomIndex from the list so that it can't be re-used
             gridPositions.RemoveAt(randomIndex);
             
@@ -127,7 +128,7 @@ namespace Completed
             LayoutObjectAtRandom(enemyTiles, enemyCount, enemyCount); 
 
             //instantiate exit at (7,7)
-            Instantiate(exit, new Vector3(columns - 1, rows - 1, 0f), Quaternion.identity); //exit will always be at (7,7)
+            Instantiate(exit, new Vector3(columns - 1, rows - 1, 0f), Quaternion.identity);
 
 
         }
