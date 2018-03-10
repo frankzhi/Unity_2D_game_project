@@ -1,2 +1,2 @@
-# Unity_2D_game_project
+# Unity_2D
 C# Scripts
